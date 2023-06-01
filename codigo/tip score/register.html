@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="script.js">
+    <script src="register.js" defer></script>
     <link rel="shortcut icon" href="images/logo-reduzido-2.ico" type="image/x-icon">
   
   
@@ -128,58 +128,54 @@
       <div class="form-signup">
         <div class="form-content">
           <header class="header-login">Registro</header>
-
-          <form action="#">
+      
+          <form action="#" onsubmit="return validateForm()">
             <div class="field input-field">
-              <input type="email" placeholder="Nome" class="email" />
+              <input type="text" placeholder="Nome" class="name" required />
             </div>
-
-
-          <form action="#">
+      
             <div class="field input-field">
-              <input type="email" placeholder="Email" class="email" />
+              <input type="email" placeholder="Email" class="email" required />
             </div>
-
+      
             <div class="field input-field">
-              <input type="password" placeholder="Senha" class="password" />
+              <input type="password" placeholder="Senha" class="password" required />
               <i class="fa-sharp fa-regular fa-eye-slash"></i>
             </div>
-
+      
             <div class="field input-field">
-              <input type="password" placeholder="Confirmar senha" class="password" />
+              <input type="password" placeholder="Confirmar senha" class="confirm-password" required />
               <i class="fa-sharp fa-regular fa-eye-slash"></i>
             </div>
-
-            <form action="#">
-              <div class="field input-field">
-                <input type="email" placeholder="Telefone" class="email" />
-              </div>
-
-          
-
+      
+            <div class="field input-field">
+              <input type="tel" placeholder="Telefone" class="phone" required />
+            </div>
+      
             <div class="field button-field">
-              <button>Registrar-se</button>
+              <button type="submit">Registrar-se</button>
             </div>
-
+      
             <div class="form-link">
-              <span>Já tem uma conta?
-                <a href="login.html" class="link login-link">Login</a></span>
+              <span>Já tem uma conta? <a href="login.html" class="link login-link">Login</a></span>
             </div>
           </form>
         </div>
         <div class="line"></div>
-
+      
         <div class="media-options">
           <a href="#" class="field-google">
             <i class="fa-brands fa-google"></i>
             <span class="span-google">Registrar-se com o Google</span>
           </a>
         </div>
-
+      
         <div class="img-tipscore">
           <img src="images/logo 100-200 PRETO.png" alt="" />
         </div>
       </div>
+      
+      
     </section>
 
 
