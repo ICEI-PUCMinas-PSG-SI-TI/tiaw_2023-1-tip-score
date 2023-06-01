@@ -10,27 +10,27 @@ function validateForm() {
       return false;
     }
   
-    if (email.trim() === "") {
+    else if (email.trim() === "") {
       alert("Por favor, preencha o campo Email");
       return false;
     }
   
-    if (password.trim() === "") {
+    else if (password.trim() === "") {
       alert("Por favor, preencha o campo Senha");
       return false;
     }
   
-    if (confirmPassword.trim() === "") {
+    else if (confirmPassword.trim() === "") {
       alert("Por favor, preencha o campo Confirmar senha");
       return false;
     }
   
-    if (password !== confirmPassword) {
+    else if (password !== confirmPassword) {
       alert("As senhas não correspondem");
       return false;
     }
   
-    if (phone.trim() === "") {
+    else if (phone.trim() === "") {
       alert("Por favor, preencha o campo Telefone");
       return false;
     }
