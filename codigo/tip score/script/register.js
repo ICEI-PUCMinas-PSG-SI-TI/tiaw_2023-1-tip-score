@@ -1,11 +1,11 @@
- // Obter o elemento de formulário
+// Obter o elemento do formulário
  const form = document.getElementById('signup-form');
 
- // Listen for form submission
+ 
  form.addEventListener('submit', function (event) {
-   event.preventDefault(); // Prevent the form from submitting
+   event.preventDefault(); 
 
-   // Get the form inputs
+    // Obter os inputs do formulário
    const user = document.getElementById('user').value;
    const email = document.getElementById('email').value;
    const password = document.getElementById('password').value;
@@ -32,6 +32,6 @@
    //Limpa as entradas do formulário
    form.reset();
 
-   // Mensagem formuçário
+   // Mensagem formulário
    alert('Formulário enviado com sucesso!');
  });
