@@ -1,3 +1,4 @@
+console.log("Importando a lib register.js");
 function validateForm() {
     const name = document.querySelector(".name").value;
     const email = document.querySelector(".email").value;
@@ -47,4 +48,3 @@ function validateForm() {
   
     return true;
   }
-  
