@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <script src="register.js" defer></script>
+    <script src="./script/register.js" defer></script>
     <link rel="shortcut icon" href="images/logo-reduzido-2.ico" type="image/x-icon">
   
   
@@ -99,10 +99,11 @@
               <button>Login</button>
             </div>
 
-            <div class="form-link">
-              <span>Não tem uma conta?
-                <a href="#" class="link signup-link">Registrar-se</a></span>
+            <div class="field button-field">
+              <button id="botao-cadastro">Cadastrar</button>
+
             </div>
+            
           </form>
         </div>
         <div class="line"></div>
@@ -129,30 +130,31 @@
         <div class="form-content">
           <header class="header-login">Registro</header>
       
-          <form action="#" onsubmit="return validateForm()">
-            <div class="field input-field">
-              <input type="text" placeholder="Nome" class="name" required />
+          <form id="signup-form" action="#">
+            <div class  ="field input-group">
+              <input required type="text" id="user" name="user" placeholder="Digite seu nome..." />
+              
             </div>
       
             <div class="field input-field">
-              <input type="email" placeholder="Email" class="email" required />
+              <input required id="email" type="email" name="email" placeholder="Digite seu email..." />
             </div>
       
-            <div class="field input-field">
-              <input type="password" placeholder="Senha" class="password" required />
+            <div class="field input-group">
+             <input required id="password" type="password" name="password" placeholder="Digite sua senha..." />
               <i class="fa-sharp fa-regular fa-eye-slash"></i>
             </div>
       
-            <div class="field input-field">
-              <input type="password" placeholder="Confirmar senha" class="confirm-password" required />
+            <div class="field input-group">
+              <input type="password" placeholder="Confirme sua senha" class="confirm-password" required />
               <i class="fa-sharp fa-regular fa-eye-slash"></i>
             </div>
       
-            <div class="field input-field">
-              <input type="tel" placeholder="Telefone" class="phone" required />
+            <div class="field input-group">
+              <input required id="celular" type="tel" placeholder="(00) 00000-0000" name="celular" />
             </div>
       
-            <div class="field button-field">
+            <div class="field button-group">
               <button type="submit">Registrar-se</button>
             </div>
       
