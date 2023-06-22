@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+    <script src="script/perfil.js"></script>
   
   
   
@@ -78,22 +78,56 @@
         <div class="row">
           <div class="col-4">
             <div class="d-flex flex-column align-items-center text-center">
-              <img src="https://via.placeholder.com/150" alt="Foto do perfil" class="rounded-circle ms-3" width="150">
+              <label for="perfil">
+                <div class="circle" id="foto-perfil"></div>
+              </label>
+              <input type="file" id="perfil" name="perfil" accept="image/*" style="display: none;">
+            </div>
+            <br>
               <div class="mt-3">
-                <h4>Seu Nome</h4>
-                <p class="text-secondary mb-1 text-white">Cargo</p>
+                <h4 id="nome-completo">Seu Nome</h4>
+                <a href="">
+                  <button id="select-team" class="select-team">Selecionar time</button>
+                </a>
+                <div id="team-selection-popup" class="team-selection-popup">
+                  <h4>Selecione seu time de futebol</h4>
+                  <div class="team-images">
+                    <img src="images/logo-cruzeiro.png" alt="Time 1" onclick="selecionarTime('Time 1')" class="img-time">
+                    <img src="images/logo-galo.png" alt="Time 2" onclick="selecionarTime('Time 2')" class="img-time">
+                    <img src="images/america-logo.png" alt="Time 3" onclick="selecionarTime('Time 3')" class="img-time">
+                    <img src="images/logo-flamengo.png" alt="Time 3" onclick="selecionarTime('Time 4')" class="img-time">
+                  </div>
+                </div>
+                <script>
+                  // Função para exibir o pop-up de seleção de time
+                  function exibirPopUpSelecaoTime(event) {
+                    event.preventDefault(); // Impede que o comportamento padrão do botão seja executado
+                    var popup = document.getElementById('team-selection-popup');
+                    popup.style.display = 'block';
+                  }
+                
+                  // Função para selecionar um time e fechar o pop-up
+                  function selecionarTime(time) {
+                    // Aqui você pode adicionar a lógica para atualizar a seleção do usuário
+                    console.log('Time selecionado:', time);
+                
+                    var popup = document.getElementById('team-selection-popup');
+                    popup.style.display = 'none';
+                  }
+                
+                  // Event listener para o botão "Selecionar time"
+                  var selectTeamButton = document.getElementById('select-team');
+                  selectTeamButton.addEventListener('click', exibirPopUpSelecaoTime);
+                </script>
+
                 
               </div>
             </div>
           </div>
           <div class="col-8">
             <div class="row">
-              <div class="col-sm-3">
-                <h6 class="mb-0">Nome Completo:</h6>
-              </div>
-              <div class="col-sm-9 text-secondary text-white">
-                Nome Sobrenome
-            </div>
+              
+            
             
             </div>
             <hr>
@@ -101,7 +135,7 @@
               <div class="col-sm-3">
                 <h6 class="mb-0">E-mail:</h6>
               </div>
-              <div class="col-sm-9 text-secondary text-white">
+              <div class="col-sm-9 text-secondary text-white" id="email">
                 email@example.com
               </div>
             </div>
@@ -110,7 +144,7 @@
               <div class="col-sm-3 text-white">
                 <h6 class="mb-0">Telefone:</h6>
               </div>
-              <div class="col-sm-9 text-secondary text-white">
+              <div class="col-sm-9 text-secondary text-white" id="telefone">
                 (99) 99999-9999
               </div>
             </div>
@@ -119,7 +153,7 @@
               <div class="col-sm-3 text-white">
                 <h6 class="mb-0">Endereço:</h6>
               </div>
-              <div class="col-sm-9 text-secondary text-white">
+              <div class="col-sm-9 text-secondary text-white" id="endereco">
                 Rua Exemplo, 123 - Bairro Exemplo<br>
                 Cidade-UF, CEP 12345-678
               </div>
@@ -127,7 +161,7 @@
             <hr>
             <div class="row">
               <div class="col-sm-12">
-                <a class="btn btn-success px-4" href="#">Editar Perfil</a>
+                <a class="btn btn-success px-4" href="#" onclick="editarEndereco()">Editar Perfil</a>
               </div>
             </div>
           </div>
@@ -286,31 +320,19 @@
           </div>
         </div>
       </footer>
-    </body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <script>
+        // Recuperar os dados do usuário armazenados no localStorage
+        const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+      
+        // Verificar se há um usuário logado
+        if (currentUser) {
+          // Exibir os dados do usuário no perfil.html
+          document.getElementById('nome-completo').textContent = currentUser.user;
+          document.getElementById('email').textContent = currentUser.email;
+          document.getElementById('telefone').textContent = currentUser.celular;
+        }
+      </script>
+      
     </body>
 </html>

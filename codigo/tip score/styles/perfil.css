@@ -93,12 +93,54 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+.select-team {
+  border-radius: 6px;
+  border: none;
+  padding: 8px;
+  font-family: "poppins", sans-serif;
+  margin-top: 26px;
+}
 
+.team-selection-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  z-index: 9999;
+  border-radius: 6px;
+  text-align: center;
+}
 
+.team-images {
+ display: inline-block;
+}
 
+.team-images img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
 
+.circle {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url('https://via.placeholder.com/150');
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
 
-
+div.d-flex{
+  width: 120px;
+}
 
 
 ul {
