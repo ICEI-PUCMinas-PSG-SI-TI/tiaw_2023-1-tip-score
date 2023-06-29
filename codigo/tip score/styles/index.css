@@ -521,10 +521,24 @@ ul {
     font-size: 14px;
     color: #878787;
   }
-@media (max-width: 1530px){
+@media (max-width: 1582px){
 .bet-houses{
 
 width: 73%;
+
+}
+.main-text{
+
+
+width: 73%;
+
+  
+}
+.match-news{
+
+
+width: 27%;
+
 
 }
 .card{
@@ -563,7 +577,7 @@ width: 39%;
 }
 .match-news{
  width: 30%;
-
+margin-top: -500px;
 
 }
 
