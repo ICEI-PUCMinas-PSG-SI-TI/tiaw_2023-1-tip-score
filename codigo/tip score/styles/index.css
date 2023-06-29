@@ -549,7 +549,30 @@ ul {
     font-size: 14px;
     color: #878787;
   }
-@media (max-width: 1582px){
+@media (max-width: 1600px){
+
+.match-news{
+
+width: 26%;
+
+}
+.bet-houses{
+
+width: 74%;
+
+}
+.main-text{
+
+width: 74%;
+
+}
+
+}
+
+
+
+
+  @media (max-width: 1582px){
 .bet-houses{
 
 width: 73%;
