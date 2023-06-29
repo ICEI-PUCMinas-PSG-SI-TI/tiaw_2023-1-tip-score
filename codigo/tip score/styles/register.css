@@ -8,6 +8,30 @@
 .nav-item li a:hover {
   color: green;
 }
+#perfil-usuario {
+  display: inline-block;
+  align-items: center;
+  margin-right: 0px;
+}
+
+#foto-usuario {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.btnDesconectar {
+  font-family: "poppins", sans-serif;
+  font-size: 10pt;
+  text-decoration: none;
+  color: #fff;
+  padding: 2px;
+}
+
+.btnDesconectar:hover {
+  transition: 0.5s;
+  color: aquamarine;
+}
 body{
   background-image: url(https://wallpaper.dog/large/17106735.jpg);
  background-repeat: no-repeat;

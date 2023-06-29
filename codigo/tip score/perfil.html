@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="script/perfil.js"></script>
-  
+    <script src="script/verificarUsuarioAtual.js"></script>
   
   
   
@@ -61,14 +61,19 @@
               
             </ul>
             <div class="d-grid gap-2 d-md-block">
-              <a href="login.html"><button class="btn btn-secondary" type="button" style="margin-right: 10px" id="btn-Login">Login</button></a>
-              <a href="register.html"><button class="btn btn-secondary" type="button" style="margin-right: 20px" id="btn-Register">Registrar-se</button></a>
-              
-              <a href="register.html"><button class="btn btn-secondary" type="button" style="margin-right: 20px" id="btnDesconectar">Desconectar</button></a>
+              <a href="login.html">
+                <button class="btn btn-secondary" type="button" style="margin-right: 10px" id="btn-Login">Login</button>
+              </a>
+              <a href="register.html">
+                <button class="btn btn-secondary" type="button" style="margin-right: 20px" id="btn-Register">Registrar-se</button>
+              </a>
               <div id="perfil-usuario">
                 <a href="perfil.html">
-                <img id="foto-usuario" src="" alt="Foto do usuário">
-              </a>
+                  <img id="foto-usuario" src="" alt="Foto do usuário">
+                </a>
+              </div>
+              <div class="logout-container">
+                <a href="#" id="btnDesconectar" class="btnDesconectar">Desconectar</a>
               </div>
             </div>
             <form class="d-flex" role="search">
@@ -266,12 +271,12 @@
                     <h3>Links úteis</h3>
                   </div>
                   <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sobre</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobrenos.html">Sobre</a></li>
                     <li><a href="#">Serviços</a></li>
                     <li><a href="#">Portifólio</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="sobrenos.html">Sobre nós</a></li>
                     <li><a href="#">Nossos serviços</a></li>
                     <li><a href="#">Time</a></li>
                     <li><a href="#">Nos contate</a></li>
@@ -315,11 +320,11 @@
               <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
                 <div class="footer-menu">
                   <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#">Termos</a></li>
                     <li><a href="#">Privacidade</a></li>
                     <li><a href="#">Política</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="contato.html">Contato</a></li>
                   </ul>
                 </div>
               </div>

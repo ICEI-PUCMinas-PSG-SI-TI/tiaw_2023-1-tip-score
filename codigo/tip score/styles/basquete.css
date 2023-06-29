@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
 .nav-item {
     font-family: "poppins", sans-serif;
     margin-top: 10px;
@@ -6,6 +8,32 @@
   
   .nav-item li a:hover {
     color: green;
+  }
+
+  #perfil-usuario {
+    display: inline-block;
+    align-items: center;
+    margin-right: 0px;
+  }
+  
+  #foto-usuario {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .btnDesconectar {
+    font-family: "poppins", sans-serif;
+    font-size: 10pt;
+    text-decoration: none;
+    color: #fff;
+    padding: 2px;
+  }
+
+  .btnDesconectar:hover {
+    transition: 0.5s;
+    color: aquamarine;
   }
 
 

@@ -1,75 +1,64 @@
 function verificarUsuarioAtual() {
-    var isNewUser = localStorage.getItem('isNewUser');
-    var currentUser = localStorage.getItem('currentUser');
-    
-    if (currentUser) {
-      // Resto do código...
-  
-      // Ocultar botões de login e registro
-      var btnLogin = document.getElementById('btn-Login');
-      var btnRegistro = document.getElementById('btn-Register');
-  
-      btnLogin.style.display = 'none';
-      btnRegistro.style.display = 'none';
-  
-      if (isNewUser) {
-        // Remover foto de perfil do Local Storage
-        localStorage.removeItem('profileImage');
-        localStorage.removeItem('userAddress');
-  
-        // Remover flag de novo usuário
-        localStorage.removeItem('isNewUser');
-  
-        // Redefinir a foto de perfil para uma imagem padrão
-        fotoPerfil.style.backgroundImage = 'url(caminho_da_imagem_padrao)';
-      }
-  
-      var perfilUsuario = document.getElementById('perfil-usuario');
-      perfilUsuario.style.display = 'flex';
-  
-      var fotoUsuario = document.getElementById('foto-usuario');
-      var storedImageUrl = localStorage.getItem('profileImage');
-      
-      if (storedImageUrl) {
-        fotoUsuario.src = storedImageUrl;
-      } else {
-        fotoUsuario.src = ''; // Remover a foto do ícone
-      }
+  var currentUser = localStorage.getItem('currentUser');
 
-      var btnDesconectar = document.getElementById('btnDesconectar');
+  // Verificar se há um usuário atual
+  if (currentUser) {
+    // Resto do código...
 
-btnDesconectar.addEventListener('click', function() {
-  // Limpar dados do usuário no localStorage
-  localStorage.removeItem('currentUser');
-  localStorage.removeItem('profileImage');
-  localStorage.removeItem('userAddress');
+    // Ocultar botões de login e registro
+    var btnLogin = document.getElementById('btn-Login');
+    var btnRegistro = document.getElementById('btn-Register');
 
-  // Atualizar a interface do usuário
-  var btnLogin = document.getElementById('btn-Login');
-  var btnRegistro = document.getElementById('btn-Register');
+    btnLogin.style.display = 'none';
+    btnRegistro.style.display = 'none';
 
-  btnLogin.style.display = 'block';
-  btnRegistro.style.display = 'block';
+    var perfilUsuario = document.getElementById('perfil-usuario');
+    perfilUsuario.style.display = 'flex';
 
-  var perfilUsuario = document.getElementById('perfil-usuario');
-  perfilUsuario.style.display = 'none';
+    var fotoUsuario = document.getElementById('foto-usuario');
+    var storedImageUrl = localStorage.getItem('profileImage');
 
-  // Outras atualizações que você desejar fazer na interface do usuário
-
-});
-
-  
-      perfilUsuario.appendChild(fotoUsuario);
-      perfilUsuario.appendChild(btnDeslogar);
-  
-      var endereco = document.getElementById('endereco');
-      var storedAddress = localStorage.getItem('userAddress');
-  
-      if (storedAddress) {
-        endereco.innerText = storedAddress;
-      }
+    if (storedImageUrl) {
+      fotoUsuario.src = storedImageUrl;
+      fotoUsuario.style.display = 'block'; // Exibir a foto de perfil
     } else {
-      window.location.href = 'login.html';
+      fotoUsuario.style.display = 'none'; // Ocultar a foto de perfil
     }
+
+    var btnDesconectar = document.getElementById('btnDesconectar');
+    btnDesconectar.style.display = 'block'; // Exibir o botão de desconectar
+
+    btnDesconectar.addEventListener('click', function () {
+      // Limpar dados do usuário no localStorage
+      localStorage.removeItem('currentUser');
+      localStorage.removeItem('profileImage');
+      localStorage.removeItem('userAddress');
+
+      // Atualizar a interface do usuário
+      btnLogin.style.display = 'block';
+      btnRegistro.style.display = 'block';
+      perfilUsuario.style.display = 'none';
+      fotoUsuario.style.display = 'none'; // Ocultar a foto de perfil
+
+      // Outras atualizações que você desejar fazer na interface do usuário
+    });
+
+    perfilUsuario.appendChild(fotoUsuario);
+    perfilUsuario.appendChild(btnDesconectar);
+
+    var endereco = document.getElementById('endereco');
+    var storedAddress = localStorage.getItem('userAddress');
+
+    if (storedAddress) {
+      endereco.innerText = storedAddress;
+    }
+  } else {
+    // Não há usuário logado, ocultar botão de desconectar e ícone da foto de perfil
+    var btnDesconectar = document.getElementById('btnDesconectar');
+    btnDesconectar.style.display = 'none';
+
+    var fotoUsuario = document.getElementById('foto-usuario');
+    fotoUsuario.style.display = 'none';
   }
-  
+}
+

@@ -26,9 +26,18 @@ body{
   border-radius: 50%;
 }
 
+.btnDesconectar {
+  font-family: "poppins", sans-serif;
+  font-size: 10pt;
+  text-decoration: none;
+  color: #fff;
+  padding: 2px;
+}
 
-
-
+.btnDesconectar:hover {
+  transition: 0.5s;
+  color: aquamarine;
+}
 
 .nav-item {
   font-family: "poppins", sans-serif;
