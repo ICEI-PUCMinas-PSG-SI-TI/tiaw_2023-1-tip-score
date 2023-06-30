@@ -64,7 +64,7 @@
     width: 1180px;
     height: 500px;
     float: right;
-    background-image: url(styles/images/vinijr-tamanhocerto.png);
+    background-image: url(images/vinijr-tamanhocerto.png);
     border-bottom: green solid 3px;
     border-left: green solid 3px;
 }
@@ -73,14 +73,14 @@
     font-family: 'Franklin Gothic Demi', sans-serif;
     font-size: 90pt;
     padding-left: 20px;
-    color: #fff;       
+    color: white;       
 }
 
 .text h2 {
     font-family: 'Franklin Gothic Demi', sans-serif;
     font-size: 90pt;
     padding-left: 140px;
-    color: #fff;      
+    color: white;     
 }
 
 .text h3 {
@@ -98,7 +98,7 @@
     font-family: 'Franklin Gothic Demi', sans-serif;
     font-size: 90pt;
     padding-left: 40px;
-    color: #fff; 
+    color: white;
 }
 
 .match-news {

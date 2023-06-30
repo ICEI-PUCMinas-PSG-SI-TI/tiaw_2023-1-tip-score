@@ -20,7 +20,7 @@ function verificarUsuarioAtual() {
 
     if (storedImageUrl) {
       fotoUsuario.src = storedImageUrl;
-      fotoUsuario.style.display = 'block'; // Exibir a foto de perfil
+      fotoUsuario.style.display = 'inline'; // Exibir a foto de perfil
     } else {
       fotoUsuario.style.display = 'none'; // Ocultar a foto de perfil
     }
