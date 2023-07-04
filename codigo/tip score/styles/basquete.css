@@ -56,6 +56,12 @@ body {
     justify-content: space-evenly;
   }
 
+
+
+  .game-info {
+    display: none;
+  }
+
   .footer-section {
     background: #151414;
     position: relative;
