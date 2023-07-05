@@ -10,6 +10,7 @@ form.addEventListener('submit', function (event) {
   const password = document.getElementById('password').value;
   const confirmPassword = document.querySelector('.confirm-password').value;
   const celular = document.getElementById('celular').value;
+ 
 
   // Validação
   if (password !== confirmPassword) {
@@ -25,7 +26,8 @@ form.addEventListener('submit', function (event) {
     user,
     email,
     password,
-    celular
+    celular,
+    favoritos: [""],
   };
 
   // Adicionar o objeto à array de cadastros

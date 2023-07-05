@@ -4,6 +4,7 @@
     font-family: "poppins", sans-serif;
     margin-top: 10px;
     margin-left: 20px;
+    text-align: center;
   }
   
   .nav-item li a:hover {
@@ -43,6 +44,27 @@ body {
 
   }
 
+
+  
+  .star {
+    display: inline-flex ;
+    width: 1em;
+    height: 1em;
+    border: 2px solid green;
+    border-radius: 50%;
+    margin-left: 5px;
+  }
+ 
+  
+
+  .star-filled {
+    background-color: green;
+  }
+
+
+
+  
+
   label{
     color: white;
   }
@@ -54,39 +76,6 @@ body {
         flex-wrap: wrap;
         justify-content: space-evenly;
   }
-
- 
-  .informacao {
-
-    margin-top: 500px;
-    color: white; 
-    width: 30%;
-    background-color: black;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.informacao h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.informacao h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.informacao h3 {
-    font-size: 16px;
-    margin-bottom: 0;
-}
-
-.informacao strong {
-    font-weight: bold;
-}
 
 
 

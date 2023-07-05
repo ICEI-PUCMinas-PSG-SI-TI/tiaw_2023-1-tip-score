@@ -108,3 +108,37 @@ function editarEndereco() {
     alert("Endereço atualizado com sucesso!");
   }
 }
+
+
+
+window.addEventListener('DOMContentLoaded', function() {
+    var teamSelectionPopup = document.getElementById('team-selection-popup');
+    let favoritos = localStorage.getItem("favorites");
+    favoritos = JSON.parse(favoritos) || [];
+
+    if (favoritos.length > 0) {
+        var lista = document.createElement('ul');
+        lista.className = 'favorites-list';
+
+        for (var i = 0; i < favoritos.length; i++) {
+            var item = document.createElement('li');
+            item.textContent = favoritos[i];
+            lista.appendChild(item);
+        }
+
+        teamSelectionPopup.appendChild(lista);
+    }
+});
+
+function togglePopup() {
+  var teamSelectionPopup = document.getElementById('team-selection-popup');
+  teamSelectionPopup.style.display = teamSelectionPopup.style.display === 'none' ? 'block' : 'none';
+}
+
+function closePopup() {
+  var teamSelectionPopup = document.getElementById('team-selection-popup');
+  teamSelectionPopup.style.display = 'none';
+}
+
+
+
