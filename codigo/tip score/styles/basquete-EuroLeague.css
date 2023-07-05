@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 body {
-    background-image: url(images/jordan.jpg);
-    background-size: cover;
+  background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    
     background-repeat: no-repeat;
 
   }
@@ -45,15 +45,86 @@ body {
     justify-content: space-evenly;
   }
 
-  .footer-section {
-    background: #151414;
-    position: relative;
-    margin-top: 800px;
-  }
-  .footer-cta {
-    border-bottom: 1px solid #373636;
+  .game-info {
+    display: none;
   }
 
+  .informacao {
+    width: 30%;
+    background-color: black;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.informacao h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.informacao h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.informacao h3 {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.informacao strong {
+    font-weight: bold;
+}
+
+.footer-section {
+  height: 600px;
+  margin-top: 0px;
+  background: #151414;
+  position: relative;
+}
+
+.footer-cta {
+    
+    border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: white;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+    padding-left: 20px;
+    display: inline-block;
+}
+.cta-text h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    width: 40px;
+    
+  }
+
+.cta-text h5 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    width: 70px;
+    
+  }
+  .cta-text span {
+    color: #757575;
+    font-size: 15px;
+  }
+  
+  .fa-solid.fa-circle-exclamation {
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
   .footer-content {
     position: relative;
     z-index: 2;
@@ -98,7 +169,24 @@ body {
     line-height: 38px;
     border-radius: 50%;
   }
-
+  
+  .facebook-bg {
+    background: #3b5998;
+  }
+  
+  .twitter-bg {
+    background: #55acee;
+  }
+  .instagram-bg {
+    background: lightpink;
+  }
+  .youtube-bg {
+    background: red;
+  }
+  .tiktok-bg {
+    background: black;
+  }
+  
   .footer-widget-heading h3 {
     color: #fff;
     font-size: 20px;
@@ -117,6 +205,7 @@ body {
   }
   .footer-widget ul li {
     display: inline-block;
+    float: left;
     width: 50%;
     margin-bottom: 12px;
   }
@@ -127,7 +216,42 @@ body {
     color: #878787;
     text-transform: capitalize;
   }
-
+  .subscribe-form {
+    position: relative;
+    overflow: hidden;
+  }
+  .subscribe-form input {
+    width: 100%;
+    padding: 14px 28px;
+    background: #2e2e2e;
+    border: 1px solid #2e2e2e;
+    color: #fff;
+  }
+  .subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: green;
+    padding: 13px 20px;
+    border: 1px solid green;
+    top: 0;
+  }
+  .subscribe-form button i {
+    color: #fff;
+    font-size: 22px;
+    transform: rotate(-6deg);
+  }
+  .copyright-area {
+    background: #202020;
+    padding: 25px 0;
+  }
+  .copyright-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #878787;
+  }
+  .copyright-text p a {
+    color: green;
+  }
   .footer-menu li {
     display: inline-block;
     margin-left: 20px;
@@ -138,6 +262,105 @@ body {
   .footer-menu li a {
     font-size: 14px;
     color: #878787;
+  }
+@media (max-width: 1600px){
+
+.match-news{
+
+width: 26%;
+
+}
+.bet-houses{
+
+width: 74%;
+
+}
+.main-text{
+
+width: 74%;
+
+}
+
+}
+
+
+
+
+  @media (max-width: 1582px){
+.bet-houses{
+
+width: 73%;
+
+}
+.main-text{
+
+
+width: 73%;
+
+  
+}
+.match-news{
+
+
+width: 27%;
+
+
+}
+.card{
+
+width: 39%;
+
+
+}
+
+
+ }
+
+  @media (max-width: 1440px){
+
+.main-text{
+
+width: 70%;
+margin-left: 30%;
+
+}
+.bet-houses{
+
+width: 70%;
+
+
+}
+.footer-section{
+
+margin-top: 1600px;
+
+}
+.card{
+
+width: 39%;
+
+}
+.match-news{
+ width: 30%;
+margin-top: -500px;
+
+}
+
+  }
+  @media (max-width: 1395px){
+.text h1, h2, h3, h4{
+
+
+font-size: 45pt;
+
+
+
+}
+.card {
+
+width: 37%;
+
+}
   }
 
 

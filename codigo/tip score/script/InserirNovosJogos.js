@@ -28,6 +28,12 @@ window.onload = function() {
     "a",
     "a"
   );
+
+  carregarJogo(
+    "RealMadridVSPartizanMozzart.jpg",
+    "a",
+    "a",
+  )
 };
 
 function carregarJogo(
@@ -83,27 +89,5 @@ function carregarJogo(
     </div>
   `;
 
-  var main = document.getElementById("principal");
-  main.appendChild(novocard);
 
-  var gameInfoToggle = novocard.querySelector('.game-info-toggle');
-  var gameInfoDiv = novocard.querySelector('.game-info');
-  
-  gameInfoToggle.addEventListener('click', function(event) {
-    event.preventDefault();
-
-    if (gameInfoDiv.style.display === 'block') {
-      gameInfoDiv.style.display = 'none';
-      gameInfoToggle.textContent = 'Game Info +';
-    } else {
-      var openGameInfos = document.querySelectorAll('.game-info');
-
-      openGameInfos.forEach(function(info) {
-        info.style.display = 'none';
-      });
-
-      gameInfoDiv.style.display = 'block';
-      gameInfoToggle.textContent = 'Game Info -';
-    }
-  });
 }
