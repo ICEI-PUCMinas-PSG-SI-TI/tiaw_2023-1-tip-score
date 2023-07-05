@@ -6,6 +6,27 @@
 
                 
 
+.image-container {
+  width: 600px; /* Ajuste o tamanho conforme necessário */
+  height: 100px; /* Permite que a altura seja ajustada automaticamente */
+  margin-right: 100%; /* Espaçamento para a direita, se necessário */
+  display: inline-block;
+  margin: 0;
+}
+
+.image-container img {
+  width: 914px;
+  height: 500px;
+}
+
+.text-container {
+  width: 100%; /* Ajuste o tamanho conforme necessário */
+  height: 50px; /* Permite que a altura seja ajustada automaticamente */
+  margin-left: -600px; /* Ajuste o valor conforme necessário para mover o container do texto para a esquerda */
+  float: left; /* Adiciona o float para mover o container para a esquerda */
+}
+
+
 
 .nav-item {
   font-family: "poppins", sans-serif;
@@ -60,11 +81,10 @@
 
 
 .main-text {
-    display: inline-block;
+    display: inline-flex;
     width: 1180px;
     height: 500px;
     float: right;
-    background-image: url(images/vinijr-tamanhocerto.png);
     border-bottom: green solid 3px;
     border-left: green solid 3px;
 }
@@ -116,28 +136,29 @@
     font-family: 'Guilty Treasure', sans-serif;
     align-items: center;
     justify-content: center; 
-    margin-top: -20px;
-    color: #fff;                                
+    margin-top: -12%;
+    color: #ffffff;                                
 }
 
 .star-icon {
     width: 20px;
-    margin-left: 70px;
-    margin-bottom: -20px;
+    margin-left: 230px;
+    margin-top: px;
 }
 
 .card-text {
     font-family: 'Franklin Gothic Demi', sans-serif;
     text-align: center;
+    color: white;
 }
 
 
 .img-atlanta {
     width: 80px;
     height: 80px;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-left: 40px;
-    display: inline-block;
+    display: inline-flex;
 }
 
 .versus {
@@ -150,10 +171,10 @@
     margin-top: -60px;
 }
 .img-miami {
-    width: 120px;
+    width: 250px;
     height: 120px;
-    margin-top: -80px;
-    margin-left: 250px;
+    margin-top: -35%;
+    margin-left: 200px;
     display: inline-block;
 }
 
@@ -365,7 +386,7 @@ ul {
     padding: 0px;
 }
 .footer-section {
-  height: 600px;
+  height: 100%;
   margin-top: 1780px;
   background: #151414;
   position: relative;
@@ -374,6 +395,7 @@ ul {
 .footer-cta {
     
     border-bottom: 1px solid #373636;
+    margin-top: 159.9%;
 }
 .single-cta i {
   color: white;
