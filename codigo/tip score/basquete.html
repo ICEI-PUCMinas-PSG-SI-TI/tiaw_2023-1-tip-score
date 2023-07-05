@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="shortcut icon" href="images/logo-reduzido-2.ico" type="image/x-icon">
     <script src="script/verificarUsuarioAtual.js"></script>
+    <script src="script/favoritos.js"></script>
 </head>
 <body onload="verificarUsuarioAtual()">
 
@@ -32,7 +33,7 @@
               class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
               style="--bs-scroll-height: 100px">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">FUTEBOL
+                <a class="nav-link active" aria-current="page" href="perfil.html">FUTEBOL
                   <i class="fa-sharp fa-regular fa-futbol"></i>
               </a>
               </li>
@@ -52,7 +53,7 @@
                 </a>
               </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">E-SPORTS
+                  <a class="nav-link active" href="">E-SPORTS 
                     <i class="fa-solid fa-gamepad"></i>
                   </a>
                 </li>
@@ -95,31 +96,36 @@
                 <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                   Fitrar por:
                 </button>
+                  
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="basquete.html">NBA
-                      <img src="images/nba-logo.png" alt="" width="15px" height="25px" style="margin-left: 5px;">
-                  </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="basquete-EuroLeague.html">EURO LEAGUE
-                      <img src="images/euroleague-logo.png" alt="" width="30px" height="18px">
-                  </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">EURO CUP
-                      <img src="images/eurocup-logo.png" alt="" width="60px" height="20px" style="margin-left: 10px;">
-                  </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">WNBA
-                      <img src="images/wnba-logo.png" alt="" width="45px" height="25px" style="margin-left: -5px;"> 
-                  </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">FIBA
-                      <img src="images/fiba-logo.png" alt="" width="45px" height="25px" style="margin-left: 5px;"> 
-                  </a>
-                  </li>
+                  <a class="nav-link active" aria-current="page" href="basquete.html">
+                    NBA  </a> <span class="star" onclick="toggleStar(this)"></span>
+                  
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="basquete-EuroLeague.html">
+                    EURO LEAGUE  </a> <span class="star" onclick="toggleStar(this)"></span>
+               
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    EURO CUP  </a> <span class="star" onclick="toggleStar(this)"></span>
+                
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    WNBA </a> <span class="star" onclick="toggleStar(this)"></span>
+                  
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    FIBA  </a> <span class="star" onclick="toggleStar(this)"></span>
+               
+                </li>
                 <ul class="dropdown-menu dropdown-menu-dark">
                   <li><a class="dropdown-item" href="#">ODD mais alta</a></li>
                   <li><a class="dropdown-item" href="#">ODD mais baixa</a></li>
