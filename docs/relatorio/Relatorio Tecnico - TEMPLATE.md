@@ -27,13 +27,13 @@ Sistemas de Infomação PUC Minas
 
 ## 🤔Informações do projeto (Introdução)
 ### ⚠ Problema 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Muitos entusiastas de apostas esportivas enfrentam dificuldades em identificar as casas de apostas mais lucrativas para determinadas odds. A falta de informações claras e atualizadas torna a tarefa de encontrar as melhores opções de apostas um processo demorado e incerto.
 
 ### 📣 Objetivos 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+O objetivo principal do nosso site é facilitar o processo de seleção das casas de apostas mais lucrativas para determinadas odds. Queremos fornecer aos usuários informações atualizadas e confiáveis, permitindo que eles identifiquem rapidamente as melhores oportunidades de apostas esportivas.
 
 ### 🚶‍♂️ Público-alvo
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Nosso público-alvo são os entusiastas de apostas esportivas, sejam eles apostadores iniciantes ou experientes. Nosso site visa atender a todos aqueles que buscam maximizar seus ganhos e desfrutar de uma experiência de apostas mais lucrativa.
 
 ## 👨‍💻 Especificações do projeto
 ### 👩 Personas 
@@ -50,7 +50,10 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 </p>
 
 ### ♟ Requisitos
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+• Integração de dados: O site deve ser capaz de integrar-se a fontes confiáveis de informações sobre as odds oferecidas por diferentes casas de apostas.
+• Algoritmo de classificação: Um algoritmo inteligente deve ser desenvolvido para analisar as odds disponíveis e classificar as casas de apostas com base em sua lucratividade para cada cenário específico.
+• Interface intuitiva: A interface do site deve ser amigável e fácil de usar, permitindo que os usuários acessem as informações necessárias de forma clara e rápida.
+• Notificações personalizadas: Os usuários devem ter a opção de receber notificações personalizadas sobre as oportunidades de apostas mais lucrativas, com base em suas preferências e critérios definidos.
 
 
 ## 🧾 Projeto da Solução
@@ -70,4 +73,4 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 
 ## 🔚 Conclusões
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Nosso site de facilitação de apostas esportivas tem como objetivo resolver o problema de encontrar as casas de apostas mais lucrativas para determinadas odds. Ao fornecer informações atualizadas e um algoritmo inteligente de classificação, esperamos ajudar os entusiastas de apostas esportivas a tomar decisões informadas e maximizar seus ganhos. Com uma interface intuitiva e recursos de notificação personalizados, buscamos oferecer aos usuários uma experiência de apostas mais conveniente e gratificante.
