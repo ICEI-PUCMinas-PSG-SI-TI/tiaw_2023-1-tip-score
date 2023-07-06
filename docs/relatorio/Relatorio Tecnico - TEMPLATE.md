@@ -1,6 +1,8 @@
 # Tip Score
 Bem-vindo a Tip Score, o seu facilitador de casa de apostas favorito! Se você é um amante de esportes e gosta de fazer apostas, chegou ao lugar certo. A Tip Score é um site que foi criado para tornar suas apostas mais fáceis e eficazes. Nós fornecemos informações úteis e valiosas para ajudá-lo a tomar decisões informadas e aumentar suas chances de ganhar.
 
+<a href="https://docs.google.com/presentation/d/1FaAytU16vv7Q9x0t6_PMOpox1r4XPEZu0YFEk8HqCBM/edit?usp=sharing">PDF Apresentação do dia 06/07/2023</a>
+
 <a href="https://youtu.be/EWQ4OOp5Xhk">Conheça melhor nosso projeto!</a>
 
 <div align="center">
